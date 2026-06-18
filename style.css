@@ -1,0 +1,87 @@
+.bandas-mes {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+   
+    background: #fffdf0; 
+    border-radius: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carousel {
+    position: relative;
+    width: 300px; 
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px; 
+    
+    border: 4px solid #ff5964; 
+    box-shadow: 0 8px 0 #35a7ff; 
+    background-color: #fff;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.btn {
+    border: none;
+    background: #ffbe0b; 
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Botões redondinhos como bolhas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 0 #e6a600; /* Efeito "3D" de botão de jogo */
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+
+.btn:hover {
+    background: #00f5d4;
+    color: #fff;
+    box-shadow: 0 4px 0 #00bfa5;
+}
+
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
